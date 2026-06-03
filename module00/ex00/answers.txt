@@ -1,0 +1,35 @@
+Showing all the packages installed in the environment 42AI-eseferi
+```bash
+conda list -n 42AI-eseferi
+```
+
+Showing the python version
+```bash
+conda list -n 42AI-eseferi python
+```
+
+Showing numpy version
+```bash
+conda list -n 42AI-eseferi numpy
+```
+
+Showing package metadata for numpy
+```bash
+pip show numpy
+```
+
+Unistalling numpy
+```bash
+conda remove -n 42AI-eseferi numpy
+```
+
+Installing numpy
+```bash
+conda update -n base -c defaults conda
+conda install numpy -n 42AI-eseferi
+```
+
+Freezing all the package requirements int the requirements.txt file
+```bash
+conda env export --no-builds > test.txt
+```
