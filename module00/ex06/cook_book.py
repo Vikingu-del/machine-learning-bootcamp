@@ -17,7 +17,6 @@ class Cookbook(dict):
         
         if not isinstance(recipe["prep_time"], int) or recipe["prep_time"] < 0:
             raise ValueError("prep_time must be a non-negative integer")
-        
 
     def __setitem__(self, key, value):
         self._validate_recipe(value)
