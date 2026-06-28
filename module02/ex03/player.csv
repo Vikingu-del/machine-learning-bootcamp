@@ -1,5 +1,5 @@
-Name,Score,Team
-Alice,95,Red
-Bob,88,Blue
-Charlie,92,Red
-DummyData,0,None
+Name;Score;Team
+Alice;95;Red
+Bob;88;Blue
+Charlie;92;Red
+DummyData;0;None

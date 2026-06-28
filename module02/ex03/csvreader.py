@@ -76,13 +76,14 @@ class CsvReader():
 
 if __name__ == "__main__":
     try:
-        with CsvReader('player.csv', ',', True) as file:
+        with CsvReader('player.csv', ';', True, 0, 0) as file:
             data = file.getdata()
             header = file.getheader()
-            print(header)
+            print(header, "\n")
             for d in data:
                 print(d)
             print("Inside the with block, is file closed?", file.file_object.closed)
     except Exception as e:
         print(e)
-    print("Outside the with block, is file closed?", file.file_object.closed)
+    if file:
+        print("Outside the with block, is file closed?", file.file_object.closed)
