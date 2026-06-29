@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-minipack"
+version = "0.0.1"
+description = "Howto create a package in python"
+readme = "README.md"
+license = { text = "GPLv3" }
+
+authors = [
+    {name = "eseferi"},
+    {email="eseferi@42.fr"}
+]
+requires-python = ">= 3.7"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Students",
+    "Topic :: Education",
+    "Topic :: HowTo",
+    "Topic :: Package",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
